@@ -37,7 +37,7 @@ logger2:
 You could visit http://localhost:8080/info/logger1 to send an INFO-level canned log message to logger1.
 
 
-For the purposes of this exercise to test ende to end, I set up a simple public FTP site using couchdrop.io that is backed by an S3 bucket that allows public read access.
+For the purposes of this exercise to test ende to end, I set up a simple public FTP site using couchdrop.io that is backed by an S3 bucket.
 
 Therefore, if the project is cloned and run exactly as configured here, you will find log files appearing here:
 
