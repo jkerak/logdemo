@@ -15,8 +15,6 @@ From a browser, you can visit `http://localhost:8080/{logLevel}/{loggerName}` to
    
    
    For example, assuming the following logger configuration as defined in `loggerConfig.yml`:
-   
-   Assuming the following logger configuration as defined in `loggerConfig.yml`:
 ```
 logger1:
     interval: 1 # minutes
