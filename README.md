@@ -11,7 +11,7 @@ To run:
 This will boot and and start the logging project/application via an embedded tomcat container running on http://localhost:8080/. It is a sample application that defines a "logging service" that can be injected into any spring boot application. For the purposes of the demo, I included a sample rest controller (`TestController`) as an easy way to execute some test log entries via the browser.
  
 
-From a browser, you can visit `http://localhost:8080/{logLevel}/{loggerName}` to test inserting log entries. The REST controller would not be required to use this logging service, it was just and easy way for me to test using a framework I am familiar with. 
+From a browser, you can visit `http://localhost:8080/{logLevel}/{loggerName}` to test inserting log entries. The REST controller would not be required to use this logging service, it was just an easy way for me to test using a framework I am familiar with. 
    
    
    For example, assuming the following logger configuration as defined in `loggerConfig.yml`:
