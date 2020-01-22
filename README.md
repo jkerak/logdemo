@@ -49,7 +49,7 @@ https://jk-logger.s3.us-east-2.amazonaws.com/ (list-objects is allowed publicly 
 
 A few things to note:
 
-I decided against using local file storage, and rather used an in-memory database (H2) to store the log entries. This was to make it easier to atomically batch log entries together safely.
+I decided against using local file storage, and rather used an in-memory database (H2) to store the log entries. This was to make it easier to atomically batch log entries together safely, and because the file was going to be deleted anyway. This would also allow the application to run anywhere without local file system access.
 
 For an arbitrary developer to use this logging library, the idea is to inject a `LoggerFactory`
  anywhere it is needed, like this:
