@@ -1,0 +1,24 @@
+logger1:
+  interval: 1 # minutes
+  host: couchdrop.io
+  port: 21
+  username: jim
+  password: test
+  log-file-name: logger1.log
+  level: INFO
+logger2:
+  interval: 2 # minutes
+  host: couchdrop.io
+  port: 21
+  username: jim
+  password: test
+  log-file-name: logger2.log
+  level: DEBUG
+logger3:
+  interval: 3 # minutes
+  host: couchdrop.io
+  port: 21
+  username: jim
+  password: test
+  log-file-name: logger2.log
+  level: ERROR
