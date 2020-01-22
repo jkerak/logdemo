@@ -53,7 +53,7 @@ public class LogFlushTask implements Runnable {
         try (final var os2is = new OutputStreamToInputStream<Void>() {
             @Override
             protected Void doRead(final InputStream inputStream) throws Exception {
-                String ts = DateTimeFormatter.ofPattern("_yyyyMMdd_HH:mm:ss").format(LocalDateTime.now());
+                String ts = DateTimeFormatter.ofPattern("_yyyyMMdd_HHmmss").format(LocalDateTime.now());
                 ftp.storeFile(logInitializationDto.getLogFileName() + ts + ".txt",inputStream);
                 return null;
             }
