@@ -1,6 +1,6 @@
-package com.example.logservice.tasks;
+package com.example.logservice.logger;
 
-import com.example.logservice.dto.LogInitializationDto;
+import com.example.logservice.model.LogInitializationDto;
 import com.example.logservice.repository.LogBatchRepository;
 import com.example.logservice.repository.LogRepository;
 import com.gc.iotools.stream.os.OutputStreamToInputStream;

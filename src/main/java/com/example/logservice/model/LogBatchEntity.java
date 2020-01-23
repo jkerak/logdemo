@@ -1,4 +1,4 @@
-package com.example.logservice.entity;
+package com.example.logservice.model;
 
 import lombok.Data;
 

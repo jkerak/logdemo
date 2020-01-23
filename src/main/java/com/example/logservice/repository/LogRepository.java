@@ -1,6 +1,6 @@
 package com.example.logservice.repository;
 
-import com.example.logservice.entity.LogEntryEntity;
+import com.example.logservice.model.LogEntryEntity;
 import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.logservice.controller;
+package com.example.logservice;
 
 import com.example.logservice.logger.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;

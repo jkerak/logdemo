@@ -1,12 +1,12 @@
 package com.example.logservice.service;
 
-import com.example.logservice.dto.LogEntryDto;
-import com.example.logservice.dto.LogInitializationDto;
-import com.example.logservice.entity.LogBatchEntity;
-import com.example.logservice.entity.LogEntryEntity;
+import com.example.logservice.model.LogEntryDto;
+import com.example.logservice.model.LogInitializationDto;
+import com.example.logservice.model.LogBatchEntity;
+import com.example.logservice.model.LogEntryEntity;
 import com.example.logservice.repository.LogBatchRepository;
 import com.example.logservice.repository.LogRepository;
-import com.example.logservice.tasks.LogFlushTask;
+import com.example.logservice.logger.LogFlushTask;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.stereotype.Component;
 
@@ -32,6 +32,7 @@ public class LogService {
         var entity = new LogEntryEntity();
         entity.setMessage(logEntry.getMessage());
         entity.setBatchId(currentBatch.getBatchId());
+        entity.setLogLevel(logEntry.getLogLevel());
 
         // insert log entry to db
         logRepository.save(entity);

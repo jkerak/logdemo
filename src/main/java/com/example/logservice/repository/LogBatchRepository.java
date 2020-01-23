@@ -1,6 +1,6 @@
 package com.example.logservice.repository;
 
-import com.example.logservice.entity.LogBatchEntity;
+import com.example.logservice.model.LogBatchEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

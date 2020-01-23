@@ -1,7 +1,7 @@
 package com.example.logservice.logger;
 
-import com.example.logservice.dto.LogEntryDto;
-import com.example.logservice.dto.LogInitializationDto;
+import com.example.logservice.model.LogEntryDto;
+import com.example.logservice.model.LogInitializationDto;
 import com.example.logservice.service.LogService;
 import org.springframework.beans.factory.annotation.Autowired;
 

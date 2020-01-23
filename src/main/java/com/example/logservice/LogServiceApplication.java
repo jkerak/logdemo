@@ -1,6 +1,6 @@
 package com.example.logservice;
 
-import com.example.logservice.dto.LogInitializationDto;
+import com.example.logservice.model.LogInitializationDto;
 import com.example.logservice.logger.Logger;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
